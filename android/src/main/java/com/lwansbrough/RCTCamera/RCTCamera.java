@@ -19,7 +19,7 @@ public class RCTCamera {
     private final HashMap<Integer, CameraInfoWrapper> _cameraInfos;
     private final HashMap<Integer, Integer> _cameraTypeToIndex;
     private final Map<Number, Camera> _cameras;
-    private static final Resolution RESOLUTION_480P = new Resolution(853, 480); // 480p shoots for a 16:9 HD aspect ratio, but can otherwise fall back/down to any other supported camera sizes, such as 800x480 or 720x480, if (any) present. See getSupportedPictureSizes/getSupportedVideoSizes below.
+    private static final Resolution RESOLUTION_480P = new Resolution(720, 480); // 480p shoots for a 16:9 HD aspect ratio, but can otherwise fall back/down to any other supported camera sizes, such as 800x480 or 720x480, if (any) present. See getSupportedPictureSizes/getSupportedVideoSizes below.
     private static final Resolution RESOLUTION_720P = new Resolution(1280, 720);
     private static final Resolution RESOLUTION_1080P = new Resolution(1920, 1080);
     private boolean _barcodeScannerEnabled = false;
